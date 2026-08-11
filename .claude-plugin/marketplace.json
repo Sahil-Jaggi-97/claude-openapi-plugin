@@ -8,7 +8,7 @@
     {
       "name": "openapi-docs",
       "source": "./",
-      "description": "Scans a project's source to discover its HTTP API surface (all methods, auth, multipart file uploads) and generates an OpenAPI 3.0 spec plus a browsable Swagger UI page."
+      "description": "Scans a project's source to discover its HTTP API surface (all methods, auth, multipart file uploads) and generates an OpenAPI 3.0 spec plus a Swagger UI page, mounted on the app's own port by default so the API can be browsed and tried out with no separate server."
     }
   ]
 }

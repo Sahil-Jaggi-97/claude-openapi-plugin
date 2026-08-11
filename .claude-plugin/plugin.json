@@ -1,7 +1,7 @@
 {
   "name": "openapi-docs",
-  "version": "1.0.0",
-  "description": "Scans a project's source code to discover its HTTP API surface — GET/POST/PUT/PATCH/DELETE/HEAD/OPTIONS endpoints, path/query/header parameters, request/response body shapes, authorization requirements, and multipart file-upload endpoints — and generates an OpenAPI 3.0 spec plus a self-contained Swagger UI page so the API can be browsed and tried out.",
+  "version": "2.0.0",
+  "description": "Scans a project's source code to discover its HTTP API surface — GET/POST/PUT/PATCH/DELETE/HEAD/OPTIONS endpoints, path/query/header parameters, request/response body shapes, authorization requirements, and multipart file-upload endpoints — and generates an OpenAPI 3.0 spec plus a Swagger UI page, mounted on the app's own port by default so the API can be browsed and tried out with no separate server.",
   "author": {
     "name": "Sahil Jaggi",
     "email": "sahiljaggi20@gmail.com"
