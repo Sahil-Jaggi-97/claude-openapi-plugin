@@ -1,0 +1,3 @@
+.claude/settings.local.json
+demo/sample-express-app/uploads/
+*.log

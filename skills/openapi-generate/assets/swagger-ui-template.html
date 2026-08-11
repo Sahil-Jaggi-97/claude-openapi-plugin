@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>__API_TITLE__ — API Docs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@5/swagger-ui.css" />
+  <style>
+    body { margin: 0; background: #fafafa; }
+    .topbar { display: none !important; }
+  </style>
+</head>
+<body>
+  <div id="swagger-ui"></div>
+
+  <!--
+    The spec is embedded inline (not fetched) so this file works standalone via file://
+    with no local server and no CORS issues. Swagger UI's JS/CSS still load from a CDN,
+    so opening this file needs internet access at least once (the browser will cache it).
+  -->
+  <script>
+    window.__OPENAPI_SPEC__ = __OPENAPI_SPEC_JSON__;
+  </script>
+  <script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js" crossorigin></script>
+  <script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-standalone-preset.js" crossorigin></script>
+  <script>
+    window.onload = function () {
+      window.ui = SwaggerUIBundle({
+        spec: window.__OPENAPI_SPEC__,
+        dom_id: "#swagger-ui",
+        presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
+        plugins: [SwaggerUIBundle.plugins.DownloadUrl],
+        layout: "StandaloneLayout",
+        deepLinking: true,
+      });
+    };
+  </script>
+</body>
+</html>

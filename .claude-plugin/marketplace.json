@@ -1,0 +1,14 @@
+{
+  "name": "openapi-docs-marketplace",
+  "owner": {
+    "name": "Sahil Jaggi",
+    "email": "sahiljaggi20@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "openapi-docs",
+      "source": "./",
+      "description": "Scans a project's source to discover its HTTP API surface (all methods, auth, multipart file uploads) and generates an OpenAPI 3.0 spec plus a browsable Swagger UI page."
+    }
+  ]
+}
